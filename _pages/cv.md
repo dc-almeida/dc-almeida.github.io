@@ -11,34 +11,11 @@ redirect_from:
 
 Education
 ======
-* BSc in 
-* MSc in
+* BSc in Cell and Molecular Biology (2016-2019), FCT NOVA - 17/20 (Grade A, ECTS Scale)
+* MSc in Data Science (2019-2021), Ciências ULisboa - 18/20 (Grade A, ECTS Scale)
 
 Work experience
 ======
-* 
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
- 
-  
-Talks
-======
- 
-  
-Teaching
-======
- 
-  
-Service and leadership
-======
-
+* MSc Student - Social Physics and Complexity Research Group @ LIP (Laboratory of Instrumentation and Experimental Particle Physics)
+* BSc Project Internship - Network Modelling Group @ IGC
+* Summer Internship - Behaviour and Metabolism Laboratory @ Champalimaud Foundation

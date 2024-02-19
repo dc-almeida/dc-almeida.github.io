@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Almeida</title>
+    <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+    <!-- Fonts-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container-fluid bg-dark text-white">
+      <div class="row">
+        <!-- New structure for small screens -->
+        <div class="col-md-6 sticky-column p-0 d-sm-block d-sm-none">
+          <!-- Inside the sticky-column div -->
+          <div class="photo-text-container">
+            <img class="photo" src="images/david.jpg" alt="David Almeida" title="David Almeida">
+            <div class="text-box">
+              <h1>
+                <mark>David</mark><br>
+                <mark>Almeida</mark>
+              </h1>
+            </div>
+          </div>
+        </div>
+        <!-- End of new structure for small screens -->
+        <!-- CV content -->
+        <div class="col-md-6">
+          <!-- Navbar (hidden in smaller screens)-->
+          <nav class="navbar navbar-expand-md navbar-dark bg-dark d-sm-none d-md-block">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><img class="icon" src="images/home.svg" alt="Home" title="Home"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#experience"><img class="icon" src="images/experience.svg" alt="Experience" title="Experience"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#education"><img class="icon" src="images/education.svg" alt="Education" title="Education"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills"><img class="icon" src="images/skills.svg" alt="Skills" title="Skills"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#activism"><img class="icon" src="images/activism.svg" alt="Activism" title="Activism"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#talks"><img class="icon" src="images/talks.svg" alt="Talks" title="Talks"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact"><img class="icon" src="images/id.svg" alt="Contact" title="Contact"></a>
+                </li>
+                <!-- Add more icons as needed -->
+              </ul>
+          </nav>
+          <!-- CV content moved outside of the col-md-6 div -->
+          <div class="cv-content">
+            <!-- About -->
+            <section id="about" class="bg-dark px-5 text-center align-text-middle">
+                <p class="px-2">
+                    <big>
+                        I am passionate about <span class="hl1">social justice,
+                        sustainability, and civic participation</span>.
+                        I have been an activist for eight years now, with a recent
+                        focus on gender equality.
+                        <br>
+                        From the challenges of AI to epistemic decolonisation, 
+                        there is hardly a topic I don't find interesting.
+                        <br>
+                        I work at <span class="hl1">Transparency International 
+                        Portugal</span>, an anticorruption non-governmental organisation.
+                        <br>
+                        I have a background in <span class="hl1">Data Science</span>
+                        and <span class="hl1">Cell and Molecular Biology</span>.
+                    </big>
+                </p>
+              </section>
+            <!-- Experience -->
+            <section id="experience" class="bg-dark px-5">
+              <h1>Experience</h1>
+              <!-- TI-PT -->
+              <h2><a href="https://transparencia.pt/"><img class="icon link" src="images/link.svg"></a> <span class="hl1">Transparency International Portugal</span></h2>
+              <h3><span class="hl2"><b>Project Assistant</b></span> <b>|</b> 2023 — present</h3>
+              <p>Day-to-day assistance on project implementation and conformity to expected results and project workplans
+                • Assistance on financial management • Membership management, including through CRM systems • Administrative tasks
+              </p>
+                <p>
+                <b>Highlights:</b>
+                <br><span class="hl1"><i>"Millions against the clock"</i>:</span> data visualisation dashboard and media campaign highlighting bad practices on direct award public contracting for World Youth Day 2023 Lisbon (+33M € in public spending)
+                <br><span class="hl1"><i>Global Anti-Corruption Consortium"</i>:</span> project focused on showcasing Portugal's role in enabling transnational corruption, by building a database of illicitly obtained assets, services, entities, and people involved in the chain of events, with the ultimate goal of supporting asset recovery
+                </p>
+              <p><b>Supervisor(s):</b> Karina Carvalho</p>
+              <!-- MEAG -->
+              <h2><a href="https://www.mediaecosystems.org/"><img class="icon link" src="images/link.svg"></a> <span class="hl1">Media Ecosystems Analysis Group</span></h2>
+              <h3><span class="hl2"><b>Consultant</b></span> <b>|</b> 2022</h3>
+              <p><b>Highlights:</b>
+                <br>Running <span class="hl1">dataset comparisons</b></span> to detect key differences related to technical problems with database downloads for different time periods
+                <br><span class="hl1">Documenting</span> the entire analysis process and producing <span class="hl1">data visualisations</span> to communicate results to supervisor
+                <br><span class="hl1">Integrating different data sources</span> from the Media Cloud project to identify problems with data integrity and availability
+              </p>
+              <p><b>Supervisor(s):</b> Fernando Bermejo, PhD</p>
+              <!-- SPAC -->
+              <h2><a href="https://socialcomplexity.eu/"><img class="icon link" src="images/link.svg"></a> <span class="hl1">Social Physics and Complexity</span></h2>
+              <h3><span class="hl2"><b>Research Fellowship</b></span> <b>|</b> 2019</h3>
+              <p><b>Highlights:</b>
+            <br><span class="hl1">Data integration</span> by designing a personalised processing pipeline
+            <br><span class="hl1">Data extraction</span> from online sources, via web scraping (using asynchronous HTTP requests) and API calls
+            <br><span class="hl1">Data transformation</span>, involving cleaning, pre-processing, and enrichment, for future analysis
+                <br><span class="hl1">Data loading</span> to an in-house database built for the purpose, supporting a large range of queries for analytics
+                    <br><span class="hl1">Text data processing and analysis</span>, using state-of-the-art NLP tools
+                        <br><span class="hl1">Time series statistical analysis</span>
+              </p>
+                        <p><b>Supervisor(s):</b> Joana Gonçalves-Sá, PhD</p>
+            <!-- IGC -->
+            <h2><span class="hl1">Network Modelling Lab</span></h2>
+            <h3><span class="hl2"><b>BSc Final Project</b></span> <b>|</b> 2020 — 2022</h3>
+            <p>Building a network of the core regulatory map of stemness markers in the epithelial to mesenchymal transition observed in cancer cells.</p>
+            <p><b>Supervisor(s):</b> Claudine Chaouiya, PhD, Gianluca Selvaggio, PhD</p>
+            <!-- Champalimaud -->
+            <h2><a href="https://fchampalimaud.org/research/groups/ribeiro"><img class="icon link" src="images/link.svg"></a> <span class="hl1">Behaviour and Metabolism Lab</span></h2>
+            <h3><span class="hl2"><b>BSc Internship</b></span> <b>|</b> 2018</h3>
+            <p>Care for <i>Drosophila</i> stock, selective breeding of specimens following fly pushing principles, running behavioural experiments using in-house developed setups.</p>
+            <p><b>Supervisor(s):</b> Zita Carvalho-Santos, PhD</p>
+            </section>
+            <section id="education" class="bg-dark px-5">
+              <h1>Education</h1>
+              <h2><a href="https://fenix.ciencias.ulisboa.pt/degrees/mcd"><img class="icon link" src="images/link.svg"></a> <span class="hl1">Master's in Data Science</span></h2>
+              <h3><span class="hl2"><b>Ciências ULisboa</b></span> <b>|</b> 2019 — 2022</h3>
+              <ul>
+                <li>Data cleaning, enrichment, transformation, visualization</li>
+                <li>Machine learning and artificial intelligence</li>
+                <li>Databases: management systems (DBMS), SQL and NoSQL</li>
+                <li>Business intelligence: extraction-transformation-loading (ETL) pipelines, data warehousing/OLAP database paradigm, data visualization (dashboards)</li>
+                <li>Statistical analysis and data sampling</li>
+              </ul>              
+              <p>
+            <b>Grade:</b> 19/20 (A in ECTS grading system) 
+            </p>
+            <h2><a href="https://www.fct.unl.pt/ensino/curso/licenciatura-em-biologia-celular-e-molecular"><img class="icon link" src="images/link.svg"></a> <span class="hl1">Bachelor's in Cell and Molecular Biology</span></h2>
+            <h3><span class="hl2"><b>FCT NOVA</b></span> <b>|</b> 2016 — 2019</h3>
+            <p>
+            <b>Grade:</b> 17/20  (A in ECTS grading system) 
+            <p>
+
+            </p>
+            </section>
+            <section id="skills" class="bg-dark px-5">
+              <h1>Skills</h1>
+              <h2><span class="hl1">Programming</span></h2>
+              
+              <ul>
+                <li>Python</li>
+                <ul>
+                    <li>pandas</li>
+                    <li>NumPy</li>
+                    <li>Matplotlib</li>
+                    <li>seaborn</li>
+                    <li>Selenium</li>
+                    <li>BeautifulSoup4</li>
+                    <li>Scikit-learn</li>
+                </ul>
+                <li>R</li>
+                    <ul>
+                        <li>Bioconductor</li>
+                        <li>deSolve</li>
+                        <li>ggplot2</li>
+                        <li>zoo</li>
+                        <li>xts</li>
+                    </ul>
+                <li>Databases</li>
+                <ul>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                </ul>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <h2><span class="hl1">IT</span></h2>
+              
+              <ul>
+                <li>Microsoft Office</li>
+                <li>Notion</li>
+                <li>Power BI</li>
+              </ul>
+              <h2><span class="hl1">Language</span></h2>
+              <ul>
+                    <li>Portuguese (native)</li>
+                    <li>English (working language)</li>
+                    <li>Spanish (advanced)</li>
+                    <li>French (elementary)</li>
+                </ul>
+              <h2><span class="hl1">Other</span></h2>
+              <p>  
+              <ul>
+                    <li>Public speaking</li>
+                    <li>Event management</li>
+                    <li>Writing</li>
+                    <li>Workshop facilitation</li>
+                    <li>Non-formal education</li>
+                    <li>Science communication</li>
+                    <li>Advocacy</li>
+                </ul>
+            </section>
+            <section id="activism" class="bg-dark px-5">
+              <h1>Activism</h1>
+<!-- HeForShe Lisboa -->
+<h2><a href="https://www.heforshelisboa.org/"><img class="icon link" src="images/link.svg"></a> <span class="hl1">HeForShe Lisboa</span></h2>
+<h3><span class="hl2"><b>President of the Board</b></span> <b>|</b> 2022 — present</h3>
+<h3><span class="hl2"><b>Events Department</b></span> <b>|</b> 2021 — 2022</h3>
+
+<p>Youth organisation for the promotion of gender equality and empowerment of communities. Daily management of team of around 40 people, organised into 7 departments, project management, event planning, partnership agreements, fundraising, etc.</p>
+<p><b>Highlights:</b>
+    <br><span class="hl1"><i>Arts Week</i></span>: yearly celebration of International Women's Day with a focus on cultural and artistic events that highlight and center the experiences of women and under-represented groups, in partnership and with the support of local government and grassroots organisations.
+    <br><span class="hl1"><i>ACADEMIA</i></span>: academy focused on Human Rights, with a component of intersectionality and gender equality, organised in partnership with NOVA School of Law's Knowledge Centre for Business, Human Rights and the Environment, and the law firm Linklaters; participants are offered the opportunity to apply to short-term shadowing programmes with partner organisations, that have included consulting firms, NGOs, national and international banks, etc.
+    <br><span class="hl1"><i>WeForEducation</i></span>: project aimed at schools, offering training and non-formal education to young students on topics related to gender equality, sex education, and social justice, in partnership with the Portuguese Foundation "Community Against AIDS"'s Centre for Youth Counselling and Orientation (FPCCS/CAOJ).
+</p>
+              
+<!-- Anémona -->
+<h2><a href="https://www.instagram.com/associacaoanemona"><img class="icon link" src="images/link.svg"></a> <span class="hl1">Associação Anémona</span></h2>
+<h3><span class="hl2"><b>Secretariat</b></span> <b>|</b> 2022 — present</h3>
+
+<p>Health organisation for the promotion of inclusive healthcare in the Portuguese National Health Service.</p>
+<p><b>Highlights:</b>
+    <br>Participation in a pilot event facilitated by <span class="hl1">IGLYO</span> (International Lesbian, Gay, Bisexual, Transgender, Queer & Intersex Youth and Student Organisation) to review and discuss Portugal's <span class="hl1">Universal Periodic Review</span> in matters of LGBTQIA+ rights.
+</p>
+<!-- ANEBio -->
+<h2><a href="https://www.instagram.com/anebio.pt"><img class="icon link" src="images/link.svg"></a> <span class="hl1">Associação Nacional de Estudantes de Biologia</span></h2>
+<h3><span class="hl2"><b>President of the Board</b></span> <b>|</b> 2020 — 2021</h3>
+<h3><span class="hl2"><b>Vice-President of the Board</b></span> <b>|</b> 2019 — 2020</h3>
+<h3><span class="hl2"><b>Member</b></span> <b>|</b> 2018 — 2019</h3>
+
+<p>National biology student federation working with university student groups to promote fair and equal access to higher education in biology, learning and extracurricular opportunities for students, and organising annual gatherings.
+</p>  
+<!-- NBCM -->
+<h2><a href="https://www.instagram.com/nucleobcm"><img class="icon link" src="images/link.svg"></a> <span class="hl1">Núcleo de Biologia Celular e Molecular</span></h2>
+<h3><span class="hl2"><b>President of the Board</b></span> <b>|</b> 2018 — 2019</h3>
+<h3><span class="hl2"><b>Vice-President of the Board</b></span> <b>|</b> 2017 — 2018</h3>
+<h3><span class="hl2"><b>Member</b></span> <b>|</b> 2016 — 2017</h3>
+
+<p>Cell and molecular biology student society from FCT NOVA, developing on-campus activities, such as talks, workshops, job fairs.
+</p>  
+
+<!-- FCT NOVA -->
+<h2><a href="https://www.fct.unl.pt/en"><img class="icon link" src="images/link.svg"></a> <span class="hl1">NOVA School of Science and Technology</span></h2>
+<h3><span class="hl2"><b>Pedagogical Council</b></span> <b>|</b> 2019</h3>
+<h3><span class="hl2"><b>Pedagogical Committee</b></span> <b>|</b> 2016 — 2019</h3>
+
+<p>Student representative for the Cell and Molecular Biology class of 2016, responsible for cooperating with professors 
+    to establish test and exam schedules, reporting any students' concerns of faculty misdemeanour, and later, organise
+    the school calendar and review proposals for new study cycles.
+</p>  
+            </section>
+            <section id="talks" class="bg-dark px-5">
+              <h1>Talks and outreach</h1>
+              <h2><span class="hl1">Speaker/lecturer</span></h2>
+              <ul>
+                <li>GERAÇÃO Z, national broadcast radio and podcast show on <span class="hl1">activism and youth civic participation in Portugal</span></li>
+                <li>IPLeiria, talk on <span class="hl1">"Domestic violence with a gender perspective"</span></li>
+                <li>Erasmus+ INETE project, talk on <span class="hl1">"What activism means for you"</li>
+                <li>VII Estados Gerais AAUL (University of Lisbon Student Union), panel on <span class="hl1">"The challenge of wellness and inclusion"</span></li>
+                <li>AIESEC YouthSpeak Forum, talk on <span class="hl1">"Diversity, Equity and Inclusion at work: more than just buzzwords"</span></li>
+                <li>AEFML Pillow Talk, debate on <span class="hl1">reproductive rights in Portugal</span></li>
+                <li>NOVA School of Law, panel on <span class="hl1">"Gender, Ethnicity and Diversity Talks: the role of civil society in promoting equality"</span></li>
+                <li>European Commission's CERV project SolRem, talk on <span class="hl1">"Contemporary women's solidarity networks and resistance against authoritarianism"</span></li>
+                <li>NOVA University Lisbon Erasmus+ project ULEAD4ALL, interviewed contribution for <span class="hl1">challenges and best practices for DEI in higher education leadership</span></li>
+              </ul>
+
+
+                
+              
+              <h2><span class="hl1">Invited participant</span></h2>
+              <ul><li>Team Community's <span class="hl1">Global Gathering 2023 on digital rights</span></li>
+                <li>European Commission's <span class="hl1">"Rule of Law in Portugal: challenges and opportunities for the justice system and fighting corruption"</span></li>
+                <li>Embassy of Germany in Portugal's fireside chat with Dr. Emilia Roig on <span class="hl1">feminist foreign policy</span></li>
+                </ul>
+              <h2><span class="hl1">Organiser/facilitator</span></h2>
+              <ul>
+                <li>Lisbon Municipality's <span class="hl1">workshop on ethics, integrity and corruption prevention</span></li>
+              </ul>
+              <h2><span class="hl1">Advocacy</span></h2>
+              <ul>
+                <li>Local Councillor for the Azambuja Municipality's Equality Council</li>
+                <li>Local Councillor for the Lisbon Municipality's Equality Council</li>
+                </ul>
+              <h2><span class="hl1">Personal development</span></h2>
+              <ul>                <li><span class="hl1">Transparency International School on Integrity 2023</span> (2023, Lithuania)</li>
+                <li>Erasmus+ Youth Exchange: <span class="hl1">Women's Rights Throughout History</span> (2023, Croatia)</li>
+                <li>Erasmus+ Youth Exchange: <span class="hl1">Fostering Gender Equality to Combat Stereotypes</span> (2022, Romania)</li>
+
+</ul>
+              <h2><span class="hl1">Outreach for FCT NOVA</span></h2>
+              <ul>                
+                <li>MathINGENIOUS</li>
+                <li>Futurália</li>
+                <li>EXPO FCT</li>
+                <li>Lycée Français Charles Lepierre</li>
+              </ul>
+            </section>
+            <section id="contact" class="bg-dark px-5">
+              <h1>Contact</h1>
+              <h3><span class="hl2"><b>dc.almeida(at)campus.fct.unl.pt</b></span> <img class="icon" src="images/email.svg"></h3>
+              <h3><span class="hl2"><b>dc-almeida</b></span> <img class="icon" src="images/github.svg"></h3>
+              <h3><span class="hl2"><b>dc-almeida</b></span> <img class="icon" src="images/linkedin.svg"></h3>
+              <h3><span class="hl2"><b>dc-almeida.github.io</b></span> <img class="icon" src="images/website.svg"></h3>
+            </section>
+            <div class="back-up">
+                <a href="#"><img class="icon" src="images/square-up.svg"></a> <!-- Next: Experience -->        
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+      /* Add this CSS for small screens */
+      @media (max-width: 768px) {
+        html { overflow-y: auto !important; }
+        .photo-text-container {
+        height: 100vh;
+        position: relative;
+        }
+        .photo {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        }
+        .text-box {
+        position: absolute !important;
+        padding: 2rem;
+        box-sizing: border-box;
+        }
+        .text-box mark {
+        background-color: white;
+        }
+        .text-box h1 {
+        font-size: 4rem;
+        }
+        .cv-content {
+        padding-top: auto !important;
+        }
+        .back-up {
+        display: none !important;
+        }
+        section {
+        min-height: 50vh !important;
+        padding: 2rem !important;
+        border: solid;
+        border-width: 1px;
+        border-color: white;
+        margin-bottom: 1rem;
+        }
+        }
+        /* Other screen sizes */
+        .sticky-column {
+        position: sticky;
+        top: 0;
+        height: 100vh; /* Adjust as needed */
+        overflow-y: hidden; /* Add scrollbar if content exceeds height */
+        }
+        .photo {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover; /* Maintain aspect ratio */
+        }
+        .text-box {
+        height: auto;
+        width: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0rem;
+        box-sizing: border-box;
+        }
+        .text-box mark {
+        background-color: white;
+        }
+        .text-box h1 {
+        font-size: 4rem;
+        }
+        .navbar {
+        position: fixed;
+        width: 50%;
+        z-index: 999;
+        }
+        section {
+        padding-top: 100px;
+        min-height: 100vh;
+        position: relative;
+        }
+        .back-up {
+        position: absolute;
+        bottom: 0;
+        right: 1;
+        color: white;
+        padding: 0.5rem;
+        }
+        html {
+        scroll-behavior: smooth;
+        max-width: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        }
+        h1 { font-family: 'Gloock', serif; }
+        h2 { 
+        text-align: right;
+        font-family: 'Space Mono', monospace;
+        font-size: x-large;
+        }
+        h3 { 
+          font-family: 'Space Mono', monospace;
+          font-size: large;
+          text-align: right;
+        }
+        p, ul, li {
+          font-size: large;
+          font-family: 'EB Garamond';
+        }
+        /* Highlights */
+        .hl1 {
+        background: linear-gradient(180deg, transparent 66%, black 33%);
+        }
+        .hl2 {
+        color: black;
+        background: linear-gradient(180deg, transparent 10%, white 0%);
+        }
+        .icon {
+        height: 35px;
+        -webkit-filter: invert(1); /* safari 6.0 - 9.0 */
+        filter: invert(1);
+        }
+        .link {
+          height: 1.25rem;
+          border-radius: 50%; 
+          background-color: white; 
+          border: solid; 
+          border-color: black; 
+          border-width: 1.5px
+        }

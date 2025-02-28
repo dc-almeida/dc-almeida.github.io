@@ -1,321 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Almeida</title>
-    <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
-    <!-- Fonts-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div class="container-fluid bg-dark text-white">
-      <div class="row">
-        <!-- New structure for small screens -->
-        <div class="col-md-6 sticky-column p-0 d-sm-block d-sm-none">
-          <!-- Inside the sticky-column div -->
-          <div class="photo-text-container">
-            <img class="photo" src="images/david.jpg" alt="David Almeida" title="David Almeida">
-            <div class="text-box">
-              <h1>
-                <mark>David</mark>
-                <br>
-                <mark>Almeida</mark>
-              </h1>
-            </div>
-          </div>
+</head>
+
+<body class="bg-dark">
+    <!-- Header -->
+    <header class="text-white text-center p-4">
+        <div class="container">
+            <img src="img/david.png" height="100px" style="-webkit-filter: invert(1); filter: invert(1);">
         </div>
-        <!-- End of new structure for small screens -->
-        <!-- CV content -->
-        <div class="col-md-6">
-          <!-- Navbar (hidden in smaller screens)-->
-          <nav class="navbar navbar-expand-md navbar-dark bg-dark d-sm-none d-md-block">
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-dark navbar navbar-expand-lg navbar-dark py-3 border-bottom border-white sticky-top d-none
+                d-lg-block">
+        <div class="container">
             <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <img class="icon" src="images/home.svg" alt="Home" title="Home">
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#experience">
-                    <img class="icon" src="images/experience.svg" alt="Experience" title="Experience">
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#education">
-                    <img class="icon" src="images/education.svg" alt="Education" title="Education">
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#skills">
-                    <img class="icon" src="images/skills.svg" alt="Skills" title="Skills">
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#activism">
-                    <img class="icon" src="images/activism.svg" alt="Activism" title="Activism">
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#talks">
-                    <img class="icon" src="images/talks.svg" alt="Talks" title="Talks">
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">
-                    <img class="icon" src="images/id.svg" alt="Contact" title="Contact">
-                  </a>
-                </li>
-                <!-- Add more icons as needed -->
-              </ul>
-          </nav>
-          <!-- CV content moved outside of the col-md-6 div -->
-          <div class="cv-content">
-            <!-- About -->
-            <section id="about" class="bg-dark px-5 text-center align-text-middle">
-              <p class="px-2">
-                <big> I am passionate about <span class="hl1">social justice, sustainability, and civic participation</span>. I have been an activist for eight years now, with a recent focus on gender equality. <br> From the challenges of AI to epistemic decolonisation, there is hardly a topic I don't find interesting. <br> I worked at <span class="hl1">Transparency International Portugal</span>, an anticorruption non-governmental organisation. I currently work in scientific software development for a climate change programme at the <span class="hl1">International Institute for Applied Systems Analysis</span> in Austria. <br> I have a background in <span class="hl1">Data Science</span> and <span class="hl1">Cell and Molecular Biology</span>. </big>
-              </p>
-            </section>
-            <!-- Experience -->
-            <section id="experience" class="bg-dark px-5">
-              <h1>Experience</h1>
-              <!-- IIASA -->
-              <h2>
-                <a href="https://iiasa.ac.at/staff/david-campos-almeida">
-                  <img class="icon link" src="images/link.svg">
+                <ul class="navbar-nav mx-auto gap-2 fs-5 d-flex flex-row flex-wrap justify-content-center">
+                    <li class="nav-item d-inline-flex">
+                        <a class="nav-link text-white border border-white rounded-pill px-3 py-1"
+                            href="#about">About</a>
+                    </li>
+                    <li class="nav-item d-inline-flex">
+                        <a class="nav-link text-white border border-white rounded-pill px-3 py-1"
+                            href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item d-inline-flex">
+                        <a class="nav-link text-white border border-white rounded-pill px-3 py-1"
+                            href="#education">Education</a>
+                    </li>
+                    <li class="nav-item d-inline-flex">
+                        <a class="nav-link text-white border border-white rounded-pill px-3 py-1"
+                            href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item d-inline-flex">
+                        <a class="nav-link text-white border border-white rounded-pill px-3 py-1"
+                            href="#activism">Activism</a>
+                    </li>
+                    <li class="nav-item d-inline-flex">
+                        <a class="nav-link text-white border border-white rounded-pill px-3 py-1"
+                            href="#outreach">Outreach</a>
+                    </li>
+                    <li class="nav-item d-inline-flex">
+                        <a class="nav-link text-white border border-white rounded-pill px-3 py-1"
+                            href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="py-5">
+        <div class="container pt-5">
+            <h4 class="mb-4 border border-white rounded-pill d-inline-flex px-3 py-1">About</h4>
+            <div class="row align-items-center">
+                <div class="col-md-5 order-md-2 text-center">
+                    <img src="img/profile.jpg" alt="Profile Picture" class="profile-pic">
+                </div>
+                <div class="col-md-7 order-md-1">
+                    <p class="lead">
+                        My name is David!
+                        I am passionate about social justice, sustainability, and
+                        civic
+                        participation.
+                    </p>
+                    <p class="lead">
+                        I have been an activist for almost nine years now, with a recent focus on gender equality.
+                        From the challenges of AI, to epistemic decolonisation, there is hardly a topic I don't find
+                        interesting!
+                    </p>
+                    <p class="lead">
+                        I currently work in scientific software development for a climate change programme
+                        at the International Institute for Applied Systems Analysis in Austria.
+                        I have a background in Data Science and Cell and Molecular Biology.
+                    </p>
+                    <p class="lead">
+                        I previously worked at Transparency International Portugal, an anticorruption non-governmental
+                        organisation.
+                    </p>
+                </div>
+            </div>
+    </section>
+
+    <section id="experience" class="py-5">
+        <div class="container pt-5">
+            <h4 class="mb-4 border border-white rounded-pill d-inline-flex px-3 py-1">Experience</h4>
+            <h4>
+                <a href="https://iiasa.ac.at/staff/david-campos-almeida" style="text-decoration: none;">
+                    <img class="icon" src="img/link.svg">
                 </a>
-                <span class="hl1">International Institute for Applied Systems Analysis (IIASA)</span>
-              </h2>
-              <h3>
-                <span class="hl2">
-                  <b>Research Software Programmer</b>
-                </span>
+                International Institute for Applied Systems Analysis (IIASA)
+            </h4>
+            <h5>
+                <b>Research Software Programmer</b>
+
                 <b>|</b> 2024 —
-              </h3>
-              <p>
-                Working as part of the Scenario Services and Scientific Software team. 
-                Part of the Integrated Assessment and Climate Change Research Group of the IIASA Energy, Climate, and Environment Program.
-              </p>
-              <p>
+            </h5>
+            <p>
+                Working as part of the Scenario Services and Scientific Software team.
+                Part of the Integrated Assessment and Climate Change Research Group of the IIASA Energy, Climate,
+                and
+                Environment Program.
+            </p>
+            <p>
                 <b>Supervisor(s):</b> Daniel Huppmann, PhD, Volkey Krey, PhD
-              </p>
-              <!-- TI-PT -->
-              <h2>
-                <a href="https://transparencia.pt/">
-                  <img class="icon link" src="images/link.svg">
+            </p>
+            <br>
+            <h4>
+                <a href="https://transparencia.pt/" style="text-decoration: none;">
+                    <img class="icon" src="img/link.svg">
                 </a>
-                <span class="hl1">Transparency International Portugal</span>
-              </h2>
-              <h3>
-                <span class="hl2">
-                  <b>Project Assistant</b>
-                </span>
+                Transparency International Portugal
+            </h4>
+            <h5>
+
+                <b>Project Assistant</b>
+
                 <b>|</b> 2023 — 2024
-              </h3>
-              <ul>
-                <li>Day-to-day assistance on project implementation and conformity to expected results and project workplans</li>
+            </h5>
+            <ul>
+                <li>Day-to-day assistance on project implementation and conformity to expected results and project
+                    workplans</li>
                 <li>Assistance on financial management</li>
                 <li>Membership management, including through CRM systems</li>
                 <li>Administrative tasks</li>
-              </ul>
-              <p>
+            </ul>
+            <p>
                 <b>Highlights:</b>
                 <br>
-                <span class="hl1">
-                  <i>"Millions against the clock"</i>: </span> data visualisation dashboard and media campaign highlighting bad practices on direct award public contracting for World Youth Day 2023 Lisbon (+33M € in public spending) <br>
-                <span class="hl1">
-                  <i>Global Anti-Corruption Consortium"</i>: </span> project focused on showcasing Portugal's role in enabling transnational corruption, by building a database of illicitly obtained assets, services, entities, and people involved in the chain of events, with the ultimate goal of supporting asset recovery
-              </p>
-              <p>
+
+                <i>"Millions against the clock"</i>: data visualisation dashboard and media campaign
+                highlighting bad practices on direct award public contracting for World Youth Day 2023 Lisbon (+33M
+                € in
+                public spending) <br>
+
+                <i>Global Anti-Corruption Consortium"</i>: project focused on showcasing Portugal's role
+                in
+                enabling transnational corruption, by building a database of illicitly obtained assets, services,
+                entities, and people involved in the chain of events, with the ultimate goal of supporting asset
+                recovery
+            </p>
+            <p>
                 <b>Supervisor(s):</b> Karina Carvalho
-              </p>
-              <!-- MEAG -->
-              <h2>
-                <a href="https://www.mediaecosystems.org/">
-                  <img class="icon link" src="images/link.svg">
+            </p>
+            <br>
+            <h4>
+                <a href="https://www.mediaecosystems.org/" style="text-decoration: none;">
+                    <img class="icon" src="img/link.svg">
                 </a>
-                <span class="hl1">Media Ecosystems Analysis Group</span>
-              </h2>
-              <h3>
-                <span class="hl2">
-                  <b>Consultant</b>
-                </span>
+                Media Ecosystems Analysis Group
+            </h4>
+            <h5>
+
+                <b>Consultant</b>
+
                 <b>|</b> 2022
-              </h3>
-              <p>
+            </h5>
+            <p>
                 <b>Highlights:</b>
-                <br>Running <span class="hl1">dataset comparisons </b>
-                </span> to detect key differences related to technical problems with database downloads for different time periods <br>
-                <span class="hl1">Documenting</span> the entire analysis process and producing <span class="hl1">data visualisations</span> to communicate results to supervisor <br>
-                <span class="hl1">Integrating different data sources</span> from the Media Cloud project to identify problems with data integrity and availability
-              </p>
-              <p>
+                <br>Running dataset comparisons </b>
+                to detect key differences related to technical problems with database downloads for
+                different
+                time periods <br>
+                Documenting the entire analysis process and producing data
+                visualisations to communicate results to supervisor <br>
+                Integrating different data sources from the Media Cloud project to identify
+                problems with data integrity and availability
+            </p>
+            <p>
                 <b>Supervisor(s):</b> Fernando Bermejo, PhD
-              </p>
-              <!-- SPAC -->
-              <h2>
-                <a href="https://socialcomplexity.eu/">
-                  <img class="icon link" src="images/link.svg">
+            </p>
+            <br>
+            <h4>
+                <a href="https://socialcomplexity.eu/" style="text-decoration: none;">
+                    <img class="icon" src="img/link.svg">
                 </a>
-                <span class="hl1">Social Physics and Complexity</span>
-              </h2>
-              <h3>
-                <span class="hl2">
-                  <b>Research Fellowship</b>
-                </span>
+                Social Physics and Complexity
+            </h4>
+            <h5>
+
+                <b>Research Fellowship</b>
+
                 <b>|</b> 2019
-              </h3>
-              <p>
+            </h5>
+            <p>
                 <b>Highlights:</b>
                 <br>
-                <span class="hl1">Data integration</span> by designing a personalised processing pipeline <br>
-                <span class="hl1">Data extraction</span> from online sources, via web scraping (using asynchronous HTTP requests) and API calls <br>
-                <span class="hl1">Data transformation</span>, involving cleaning, pre-processing, and enrichment, for future analysis <br>
-                <span class="hl1">Data loading</span> to an in-house database built for the purpose, supporting a large range of queries for analytics <br>
-                <span class="hl1">Text data processing and analysis</span>, using state-of-the-art NLP tools <br>
-                <span class="hl1">Time series statistical analysis</span>
-              </p>
-              <p>
+                Data integration by designing a personalised processing pipeline <br>
+                Data extraction from online sources, via web scraping (using asynchronous
+                HTTP
+                requests) and API calls <br>
+                Data transformation, involving cleaning, pre-processing, and enrichment,
+                for
+                future analysis <br>
+                Data loading to an in-house database built for the purpose, supporting a
+                large
+                range of queries for analytics <br>
+                Text data processing and analysis, using state-of-the-art NLP tools <br>
+                Time series statistical analysis
+            </p>
+            <p>
                 <b>Supervisor(s):</b> Joana Gonçalves-Sá, PhD
-              </p>
-              <!-- IGC -->
-              <h2>
-                <span class="hl1">Network Modelling Lab</span>
-              </h2>
-              <h3>
-                <span class="hl2">
-                  <b>BSc Final Project</b>
-                </span>
+            </p>
+            <br>
+            <h4>
+                Network Modelling Lab
+            </h4>
+            <h5>
+
+                <b>BSc Final Project</b>
+
                 <b>|</b> 2020 — 2022
-              </h3>
-              <p>Building a network of the core regulatory map of stemness markers in the epithelial to mesenchymal transition observed in cancer cells.</p>
-              <p>
+            </h5>
+            <p>Building a network of the core regulatory map of stemness markers in the epithelial to mesenchymal
+                transition observed in cancer cells.</p>
+            <p>
                 <b>Supervisor(s):</b> Claudine Chaouiya, PhD, Gianluca Selvaggio, PhD
-              </p>
-              <!-- Champalimaud -->
-              <h2>
-                <a href="https://fchampalimaud.org/research/groups/ribeiro">
-                  <img class="icon link" src="images/link.svg">
+            </p>
+            <br>
+            <h4>
+                <a href="https://fchampalimaud.org/research/groups/ribeiro" style="text-decoration: none;">
+                    <img class="icon" src="img/link.svg">
                 </a>
-                <span class="hl1">Behaviour and Metabolism Lab</span>
-              </h2>
-              <h3>
-                <span class="hl2">
-                  <b>BSc Internship</b>
-                </span>
+                Behaviour and Metabolism Lab
+            </h4>
+            <h5>
+
+                <b>BSc Internship</b>
+
                 <b>|</b> 2018
-              </h3>
-              <p>Care for <i>Drosophila</i> stock, selective breeding of specimens following fly pushing principles, running behavioural experiments using in-house developed setups. </p>
-              <p>
+            </h5>
+            <p>Care for <i>Drosophila</i> stock, selective breeding of specimens following fly pushing principles,
+                running behavioural experiments using in-house developed setups. </p>
+            <p>
                 <b>Supervisor(s):</b> Zita Carvalho-Santos, PhD
-              </p>
-            </section>
-            <section id="education" class="bg-dark px-5">
-              <h1>Education</h1>
-              <h2>
-                <a href="https://fenix.ciencias.ulisboa.pt/degrees/mcd">
-                  <img class="icon link" src="images/link.svg">
+            </p>
+    </section>
+
+    <section id="education" class="py-5">
+        <div class="container pt-5">
+            <h4 class="mb-4 border border-white rounded-pill d-inline-flex px-3 py-1">Education</h4>
+            <h4>
+                <a href="https://fenix.ciencias.ulisboa.pt/degrees/mcd" style="text-decoration: none;">
+                    <img class="icon" src="img/link.svg">
                 </a>
-                <span class="hl1">Master's in Data Science</span>
-              </h2>
-              <h3>
-                <span class="hl2">
-                  <b>Ciências ULisboa</b>
-                </span>
+                Master's in Data Science
+            </h4>
+            <h5>
+
+                <b>Ciências ULisboa</b>
+
                 <b>|</b> 2019 — 2022
-              </h3>
-              <ul>
+            </h5>
+            <ul>
                 <li>Data cleaning, enrichment, transformation, visualization</li>
                 <li>Machine learning and artificial intelligence</li>
                 <li>Databases: management systems (DBMS), SQL and NoSQL</li>
-                <li>Business intelligence: extraction-transformation-loading (ETL) pipelines, data warehousing/OLAP database paradigm, data visualization (dashboards)</li>
+                <li>Business intelligence: extraction-transformation-loading (ETL) pipelines, data warehousing/OLAP
+                    database paradigm, data visualization (dashboards)</li>
                 <li>Statistical analysis and data sampling</li>
-              </ul>
-              <p>
+            </ul>
+            <p>
                 <b>Grade:</b> 19/20 (A in ECTS grading system)
-              </p>
-              <h2>
-                <a href="https://www.fct.unl.pt/ensino/curso/licenciatura-em-biologia-celular-e-molecular">
-                  <img class="icon link" src="images/link.svg">
+            </p>
+            <br>
+            <h4>
+                <a href="https://www.fct.unl.pt/ensino/curso/licenciatura-em-biologia-celular-e-molecular"
+                    style="text-decoration: none;">
+                    <img class="icon" src="img/link.svg">
                 </a>
-                <span class="hl1">Bachelor's in Cell and Molecular Biology</span>
-              </h2>
-              <h3>
-                <span class="hl2">
-                  <b>FCT NOVA</b>
-                </span>
+                Bachelor's in Cell and Molecular Biology
+            </h4>
+            <h5>
+
+                <b>FCT NOVA</b>
+
                 <b>|</b> 2016 — 2019
-              </h3>
-              <p>
+            </h5>
+            <p>
                 <b>Grade:</b> 17/20 (A in ECTS grading system)
-              <p></p>
-            </section>
-            <section id="skills" class="bg-dark px-5">
-              <h1>Skills</h1>
-              <h2>
-                <span class="hl1">Programming</span>
-              </h2>
-              <ul>
+            <p></p>
+    </section>
+
+    <section id="skills" class="py-5">
+        <div class="container pt-5">
+            <h4 class="mb-4 border border-white rounded-pill d-inline-flex px-3 py-1">Skills</h4>
+            <h4>
+                Programming
+            </h4>
+            <ul>
                 <li>Python</li>
                 <ul>
-                  <li>pandas</li>
-                  <li>NumPy</li>
-                  <li>Matplotlib</li>
-                  <li>seaborn</li>
-                  <li>Selenium</li>
-                  <li>BeautifulSoup4</li>
-                  <li>Scikit-learn</li>
+                    <li>pandas</li>
+                    <li>NumPy</li>
+                    <li>Matplotlib</li>
+                    <li>seaborn</li>
+                    <li>Selenium</li>
+                    <li>BeautifulSoup4</li>
+                    <li>Scikit-learn</li>
+                    <li>Pydantic</li>
                 </ul>
                 <li>R</li>
                 <ul>
-                  <li>Bioconductor</li>
-                  <li>deSolve</li>
-                  <li>ggplot2</li>
-                  <li>zoo</li>
-                  <li>xts</li>
+                    <li>Bioconductor</li>
+                    <li>deSolve</li>
+                    <li>ggplot2</li>
+                    <li>zoo</li>
+                    <li>xts</li>
                 </ul>
                 <li>Databases</li>
                 <ul>
-                  <li>PostgreSQL</li>
-                  <li>MongoDB</li>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
                 </ul>
                 <li>HTML</li>
                 <li>CSS</li>
-              </ul>
-              <h2>
-                <span class="hl1">IT</span>
-              </h2>
-              <ul>
+                <li>Git</li>
+            </ul>
+            <h4>
+                IT
+            </h4>
+            <ul>
                 <li>Microsoft Office</li>
                 <li>Notion</li>
                 <li>Power BI</li>
-              </ul>
-              <h2>
-                <span class="hl1">Language</span>
-              </h2>
-              <ul>
+            </ul>
+            <h4>
+                Language
+            </h4>
+            <ul>
                 <li>Portuguese (native)</li>
                 <li>English (working language)</li>
                 <li>Spanish (advanced)</li>
                 <li>French (elementary)</li>
-              </ul>
-              <h2>
-                <span class="hl1">Other</span>
-              </h2>
-              <p>
-              <ul>
+                <li>German (elementary)</li>
+            </ul>
+            <h4>
+                Other
+            </h4>
+            <p>
+            <ul>
                 <li>Public speaking</li>
                 <li>Event management</li>
                 <li>Writing</li>
@@ -323,286 +358,351 @@
                 <li>Non-formal education</li>
                 <li>Science communication</li>
                 <li>Advocacy</li>
-              </ul>
-            </section>
-            <section id="activism" class="bg-dark px-5">
-              <h1>Activism</h1>
-              <!-- HeForShe Lisboa -->
-              <h2>
-                <a href="https://www.heforshelisboa.org/">
-                  <img class="icon link" src="images/link.svg">
+            </ul>
+    </section>
+
+    <section id="activism" class="py-5">
+        <div class="container pt-5">
+            <h4 class="mb-4 border border-white rounded-pill d-inline-flex px-3 py-1">Activism</h4>
+            <h4>
+                <a href="https://www.heforshelisboa.org/" style="text-decoration: none;">
+                    <img class="icon" src="img/link.svg">
                 </a>
-                <span class="hl1">HeForShe Lisboa</span>
-              </h2>
-              <h3>
-                <span class="hl2">
-                  <b>President of the Board</b>
-                </span>
-                <b>|</b> 2022 — present
-              </h3>
-              <h3>
-                <span class="hl2">
-                  <b>Events Department</b>
-                </span>
+                HeForShe Lisboa
+            </h4>
+            <h5>
+                <b>Alumni Board</b>
+                <b>|</b> 2024 — present
+            </h5>
+            <h5>
+                <b>President of the Board</b>
+                <b>|</b> 2022 — 2024
+            </h5>
+            <h5>
+                <b>Events Department</b>
                 <b>|</b> 2021 — 2022
-              </h3>
-              <p>Youth organisation for the promotion of gender equality and empowerment of communities. Daily management of team of around 40 people, organised into 7 departments, project management, event planning, partnership agreements, fundraising, etc.</p>
-              <p>
+            </h5>
+            <p>Youth organisation for the promotion of gender equality and empowerment of communities. Daily management
+                of team of around 40 people, organised into 7 departments, project management, event planning,
+                partnership agreements, fundraising, etc.</p>
+            <p>
                 <b>Highlights:</b>
                 <br>
-                <span class="hl1">
-                  <i>Arts Week</i>
-                </span>: yearly celebration of International Women's Day with a focus on cultural and artistic events that highlight and center the experiences of women and under-represented groups, in partnership and with the support of local government and grassroots organisations. <br>
-                <span class="hl1">
-                  <i>ACADEMIA</i>
-                </span>: academy focused on Human Rights, with a component of intersectionality and gender equality, organised in partnership with NOVA School of Law's Knowledge Centre for Business, Human Rights and the Environment, and the law firm Linklaters; participants are offered the opportunity to apply to short-term shadowing programmes with partner organisations, that have included consulting firms, NGOs, national and international banks, etc. <br>
-                <span class="hl1">
-                  <i>WeForEducation</i>
-                </span>: project aimed at schools, offering training and non-formal education to young students on topics related to gender equality, sex education, and social justice, in partnership with the Portuguese Foundation "Community Against AIDS"'s Centre for Youth Counselling and Orientation (FPCCS/CAOJ).
-              </p>
-              <!-- Anémona -->
-              <h2>
-                <a href="https://www.instagram.com/associacaoanemona">
-                  <img class="icon link" src="images/link.svg">
+            <ul>
+                <li> <i>Arts Week</i>: yearly celebration of International Women's Day with a focus on cultural and
+                    artistic
+                    events
+                    that highlight and center the experiences of women and under-represented groups, in partnership and
+                    with
+                    the support of local government and grassroots organisations. <br>
+                </li>
+                <li>
+                    <i>ACADEMIA</i>: academy focused on Human Rights, with a component of intersectionality and gender
+                    equality,
+                    organised in partnership with NOVA School of Law's Knowledge Centre for Business, Human Rights and
+                    the
+                    Environment, and the law firm Linklaters; participants are offered the opportunity to apply to
+                    short-term shadowing programmes with partner organisations, that have included consulting firms,
+                    NGOs,
+                    national and international banks, etc. <br>
+                </li>
+                <li> <i>WeForEducation</i>: project aimed at schools, offering training and non-formal education to
+                    young
+                    students on
+                    topics related to gender equality, sex education, and social justice, in partnership with the
+                    Portuguese
+                    Foundation "Community Against AIDS"'s Centre for Youth Counselling and Orientation (FPCCS/CAOJ).
+                </li>
+            </ul>
+            </p>
+            <br>
+            <h4>
+                <a href="https://www.instagram.com/associacaoanemona" style="text-decoration: none;">
+                    <img class="icon" src="img/link.svg">
                 </a>
-                <span class="hl1">Associação Anémona</span>
-              </h2>
-              <h3>
-                <span class="hl2">
-                  <b>Secretariat</b>
-                </span>
-                <b>|</b> 2022 — present
-              </h3>
-              <p>Health organisation for the promotion of inclusive healthcare in the Portuguese National Health Service.</p>
-              <p>
+                Associação Anémona
+            </h4>
+            <h5>
+                <b>Secretariat</b>
+                <b>|</b> 2022 — 2024
+            </h5>
+            <p>Health organisation for the promotion of inclusive healthcare in the Portuguese National Health Service.
+            </p>
+            <p>
                 <b>Highlights:</b>
-                <br>Participation in a pilot event facilitated by <span class="hl1">IGLYO</span> (International Lesbian, Gay, Bisexual, Transgender, Queer & Intersex Youth and Student Organisation) to review and discuss Portugal's <span class="hl1">Universal Periodic Review</span> in matters of LGBTQIA+ rights.
-              </p>
-              <!-- ANEBio -->
-              <h2>
-                <a href="https://www.instagram.com/anebio.pt">
-                  <img class="icon link" src="images/link.svg">
+                <br>Participation in a pilot event facilitated by IGLYO (International Lesbian,
+                Gay, Bisexual, Transgender, Queer & Intersex Youth and Student Organisation) to review and discuss
+                Portugal's Universal Periodic Review in matters of LGBTQIA+ rights.
+            </p>
+            <br>
+            <h4>
+                <a href="https://www.instagram.com/anebio.pt" style="text-decoration: none;">
+                    <img class="icon" src="img/link.svg">
                 </a>
-                <span class="hl1">Associação Nacional de Estudantes de Biologia</span>
-              </h2>
-              <h3>
-                <span class="hl2">
-                  <b>President of the Board</b>
-                </span>
+                Associação Nacional de Estudantes de Biologia
+            </h4>
+            <h5>
+                <b>President of the Board</b>
                 <b>|</b> 2020 — 2021
-              </h3>
-              <h3>
-                <span class="hl2">
-                  <b>Vice-President of the Board</b>
-                </span>
+            </h5>
+            <h5>
+                <b>Vice-President of the Board</b>
                 <b>|</b> 2019 — 2020
-              </h3>
-              <h3>
-                <span class="hl2">
-                  <b>Member</b>
-                </span>
+            </h5>
+            <h5>
+                <b>Member</b>
                 <b>|</b> 2018 — 2019
-              </h3>
-              <p>National biology student federation working with university student groups to promote fair and equal access to higher education in biology, learning and extracurricular opportunities for students, and organising annual gatherings. </p>
-              <!-- NBCM -->
-              <h2>
-                <a href="https://www.instagram.com/nucleobcm">
-                  <img class="icon link" src="images/link.svg">
+            </h5>
+            <p>National biology student federation working with university student groups to promote fair and equal
+                access to higher education in biology, learning and extracurricular opportunities for students, and
+                organising annual gatherings. </p>
+            <br>
+            <h4>
+                <a href="https://www.instagram.com/nucleobcm" style="text-decoration: none;">
+                    <img class="icon" src="img/link.svg">
                 </a>
-                <span class="hl1">Núcleo de Biologia Celular e Molecular</span>
-              </h2>
-              <h3>
-                <span class="hl2">
-                  <b>President of the Board</b>
-                </span>
+                Núcleo de Biologia Celular e Molecular
+            </h4>
+            <h5>
+                <b>President of the Board</b>
                 <b>|</b> 2018 — 2019
-              </h3>
-              <h3>
-                <span class="hl2">
-                  <b>Vice-President of the Board</b>
-                </span>
+            </h5>
+            <h5>
+                <b>Vice-President of the Board</b>
                 <b>|</b> 2017 — 2018
-              </h3>
-              <h3>
-                <span class="hl2">
-                  <b>Member</b>
-                </span>
+            </h5>
+            <h5>
+                <b>Member</b>
                 <b>|</b> 2016 — 2017
-              </h3>
-              <p>Cell and molecular biology student society from FCT NOVA, developing on-campus activities, such as talks, workshops, job fairs. </p>
-              <!-- FCT NOVA -->
-              <h2>
-                <a href="https://www.fct.unl.pt/en">
-                  <img class="icon link" src="images/link.svg">
+            </h5>
+            <p>Cell and molecular biology student society from FCT NOVA, developing on-campus activities, such as talks,
+                workshops, job fairs. </p>
+            <br>
+            <h4>
+                <a href="https://www.fct.unl.pt/en" style="text-decoration: none;">
+                    <img class="icon" src="img/link.svg">
                 </a>
-                <span class="hl1">NOVA School of Science and Technology</span>
-              </h2>
-              <h3>
-                <span class="hl2">
-                  <b>Pedagogical Council</b>
-                </span>
+                NOVA School of Science and Technology
+            </h4>
+            <h5>
+                <b>Pedagogical Council</b>
                 <b>|</b> 2019
-              </h3>
-              <h3>
-                <span class="hl2">
-                  <b>Pedagogical Committee</b>
-                </span>
+            </h5>
+            <h5>
+                <b>Pedagogical Committee</b>
                 <b>|</b> 2016 — 2019
-              </h3>
-              <p>Student representative for the Cell and Molecular Biology class of 2016, responsible for cooperating with professors to establish test and exam schedules, reporting any students' concerns of faculty misdemeanour, and later, organise the school calendar and review proposals for new study cycles. </p>
-            </section>
-            <section id="talks" class="bg-dark px-5">
-              <h1>Talks and outreach</h1>
-              <h2>
-                <span class="hl1">Interviews</span>
-              </h2>
-              <ul>
-                <li>GERAÇÃO Z, national broadcast radio and podcast show on <span class="hl1">activism and youth civic participation in Portugal</span> 
-                  <a href="https://rr.sapo.pt/artigo/geracao-z/2024/02/23/ativismo-pode-ficar-em-risco-devido-a-problemas-como-a-crise-na-habitacao/367795/">
-                    <img class="icon link" src="images/link.svg">
-                  </a>
+            </h5>
+            <p>Student representative for the Cell and Molecular Biology class of 2016, responsible for cooperating with
+                professors to establish test and exam schedules, reporting any students' concerns of faculty
+                misdemeanour, and later, organise the school calendar and review proposals for new study cycles. </p>
+    </section>
+
+    <section id="outreach" class="py-5">
+        <div class="container pt-5">
+            <h4 class="mb-4 border border-white rounded-pill d-inline-flex px-3 py-1">Outreach</h4>
+            <h4>Interviews
+            </h4>
+            <ul>
+                <li>GERAÇÃO Z, national broadcast radio and podcast show on activism and youth civic
+                    participation in Portugal
+                    <a
+                        href="https://rr.sapo.pt/artigo/geracao-z/2024/02/23/ativismo-pode-ficar-em-risco-devido-a-problemas-como-a-crise-na-habitacao/367795/">
+                        <img class="icon" src="img/link.svg">
+                    </a>
                 </li>
-                <li><span class="hl1">Jornal i</span>, national coverage newspaper, contributions to articles:</li>
+                <li>Jornal i, national coverage newspaper, contributions to articles:</li>
                 <ul>
-                  <li>
-                    "The vision of young people on Artificial Intelligence" (December 14, 2023)
-                    <a href="https://ionline.sapo.pt/artigo/809142/a-visao-dos-jovens-portugueses-sobre-a-intelig-ncia-artificial">
-                      <img class="icon link" src="images/link.svg">
-                    </a>
-                  </li>
-                  <li>
-                    "Very light plastic bags. A matter of habit?" (October 17, 2023)
-                    <a href="https://ionline.sapo.pt/artigo/807488/sacos-muito-leves-e-tudo-uma-questao-de-habito-">
-                      <img class="icon link" src="images/link.svg">
-                    </a>
-                  </li>
-                  <li>
-                    "0% VAT. Are the Portuguese satisfied?" (April 23, 2023)
-                    <a href="https://ionline.sapo.pt/artigo/797641/iva-0-os-portugueses-estao-satisfeitos-">
-                      <img class="icon link" src="images/link.svg">
-                    </a>
-                  </li>
-                  <li>
-                    "The Little Mermaid. A discussion on representation" (September 19, 2022)
-                    <a href="https://ionline.sapo.pt/artigo/781304/pequena-sereia-uma-discussao-sobre-representatividade">
-                      <img class="icon link" src="images/link.svg">
-                    </a>  
-                  </li> 
+                    <li>
+                        "The vision of young people on Artificial Intelligence" (December 14, 2023)
+                        <a
+                            href="https://ionline.sapo.pt/2023/12/14/a-visao-dos-jovens-portugueses-sobre-a-inteligencia-artificial/">
+                            <img class="icon" src="img/link.svg">
+                        </a>
+                    </li>
+                    <li>
+                        "Very light plastic bags. A matter of habit?" (October 17, 2023)
+                        <a href="https://ionline.sapo.pt/artigo/807488/sacos-muito-leves-e-tudo-uma-questao-de-habito-">
+                            <img class="icon" src="img/link.svg">
+                        </a>
+                    </li>
+                    <li>
+                        "0% VAT. Are the Portuguese satisfied?" (April 23, 2023)
+                        <a href="https://ionline.sapo.pt/artigo/797641/iva-0-os-portugueses-estao-satisfeitos-">
+                            <img class="icon" src="img/link.svg">
+                        </a>
+                    </li>
+                    <li>
+                        "The Little Mermaid. A discussion on representation" (September 19, 2022)
+                        <a
+                            href="https://ionline.sapo.pt/artigo/781304/pequena-sereia-uma-discussao-sobre-representatividade">
+                            <img class="icon" src="img/link.svg">
+                        </a>
+                    </li>
                 </ul>
-              </ul>
-              <h2>
-                <span class="hl1">Speaker/lecturer</span>
-              </h2>
-              <ul>
-                <li>IPLeiria, talk on <span class="hl1">"Domestic violence with a gender perspective"</span>
+            </ul>
+            <h4>Speaker/lecturer</h4>
+            <ul>
+                <li>IPLeiria, talk on "Domestic violence with a gender perspective"
                 </li>
-                <li>Erasmus+ INETE project, talk on <span class="hl1">"What activism means for you" </li>
-                <li>VII Estados Gerais AAUL (University of Lisbon Student Union), panel on <span class="hl1">"The challenge of wellness and inclusion"</span>
+                <li>Erasmus+ INETE project, talk on "What activism means for you" </li>
+                <li>VII Estados Gerais AAUL (University of Lisbon Student Union), panel on "The
+                    challenge of wellness and inclusion"
                 </li>
-                <li>AIESEC YouthSpeak Forum, talk on <span class="hl1">"Diversity, Equity and Inclusion at work: more than just buzzwords"</span>
+                <li>AIESEC YouthSpeak Forum, talk on "Diversity, Equity and Inclusion at work: more
+                    than just buzzwords"
                 </li>
-                <li>AEFML Pillow Talk, debate on <span class="hl1">reproductive rights in Portugal</span>
+                <li>AEFML Pillow Talk, debate on reproductive rights in Portugal
                 </li>
-                <li>NOVA School of Law, panel on <span class="hl1">"Gender, Ethnicity and Diversity Talks: the role of civil society in promoting equality"</span>
-                  <a href="https://novalaw.unl.pt/en/gender-ethnicity-and-diversity-talks/">
-                    <img class="icon link" src="images/link.svg">
-                  </a>  
+                <li>NOVA School of Law, panel on "Gender, Ethnicity and Diversity Talks: the role of
+                    civil society in promoting equality"
+                    <a href="https://novalaw.unl.pt/en/gender-ethnicity-and-diversity-talks/">
+                        <img class="icon" src="img/link.svg">
+                    </a>
                 </li>
-                <li>European Commission's CERV project SolRem, talk on <span class="hl1">"Contemporary women's solidarity networks and resistance against authoritarianism"</span>
-                  <a href="https://solrem.npo.one/">
-                    <img class="icon link" src="images/link.svg">
-                  </a>  
+                <li>European Commission's CERV project SolRem, talk on "Contemporary women's
+                    solidarity networks and resistance against authoritarianism"
+                    <a href="https://solrem.npo.one/">
+                        <img class="icon" src="img/link.svg">
+                    </a>
                 </li>
-                <li>NOVA University Lisbon Erasmus+ project ULEAD4ALL, interviewed contribution for <span class="hl1">challenges and best practices for DEI in higher education leadership</span>
-                  <a href="https://www.unl.pt/en/news/nova/nova-participates-project-promote-more-inclusive-leadership">
-                    <img class="icon link" src="images/link.svg">
-                  </a>  
+                <li>NOVA University Lisbon Erasmus+ project ULEAD4ALL, interviewed contribution for challenges and best
+                    practices for DEI in higher education leadership
+                    <a
+                        href="https://www.unl.pt/en/noticias/nova/nova-participates-in-project-to-promote-more-inclusive-leadership/">
+                        <img class="icon" src="img/link.svg">
+                    </a>
                 </li>
-              </ul>
-              <h2>
-                <span class="hl1">Invited participant</span>
-              </h2>
-              <ul>
-                <li>Team Community's <span class="hl1">Global Gathering 2023 on digital rights</span>
+            </ul>
+            <h4>Invited participant</h4>
+            <ul>
+                <li>Team Community's Global Gathering 2023 on digital rights
                 </li>
-                <li>European Commission's <span class="hl1">"Rule of Law in Portugal: challenges and opportunities for the justice system and fighting corruption"</span>
+                <li>European Commission's "Rule of Law in Portugal: challenges and opportunities for
+                    the justice system and fighting corruption"
                 </li>
-                <li>Embassy of Germany in Portugal's fireside chat with Dr. Emilia Roig on <span class="hl1">feminist foreign policy</span>
+                <li>Embassy of Germany in Portugal's fireside chat with Dr. Emilia Roig on feminist
+                    foreign policy
                 </li>
-              </ul>
-              <h2>
-                <span class="hl1">Organiser/facilitator</span>
-              </h2>
-              <ul>
-                <li>Lisbon Municipality's <span class="hl1">workshop on ethics, integrity and corruption prevention</span>
+            </ul>
+            <h4>Organiser/facilitator</h4>
+            <ul>
+                <li>Lisbon Municipality's workshop on ethics, integrity
+                    and corruption prevention
+
                 </li>
-              </ul>
-              <h2>
-                <span class="hl1">Advocacy</span>
-              </h2>
-              <ul>
+            </ul>
+            <h4>Advocacy
+            </h4>
+            <ul>
                 <li>Local Councillor for the Azambuja Municipality's Equality Council</li>
                 <li>Local Councillor for the Lisbon Municipality's Equality Council</li>
-              </ul>
-              <h2>
-                <span class="hl1">Personal development</span>
-              </h2>
-              <ul>
+            </ul>
+            <h4>Personal development</h4>
+            <ul>
                 <li>
-                  <span class="hl1">Transparency International School on Integrity 2023</span> (2023, Lithuania)
+                    Transparency International School on Integrity 2023 (2023, Lithuania)
                 </li>
-                <li>Erasmus+ Youth Exchange: <span class="hl1">Women's Rights Throughout History</span> (2023, Croatia) </li>
-                <li>Erasmus+ Youth Exchange: <span class="hl1">Fostering Gender Equality to Combat Stereotypes</span> (2022, Romania) </li>
-              </ul>
-              <h2>
-                <span class="hl1">Outreach for FCT NOVA</span>
-              </h2>
-              <ul>
+                <li>Erasmus+ Youth Exchange: Women's Rights Throughout History (2023, Croatia)
+                </li>
+                <li>Erasmus+ Youth Exchange: Fostering Gender Equality to Combat Stereotypes
+                    (2022, Romania) </li>
+            </ul>
+            <h4>Outreach for FCT NOVA</h4>
+            <ul>
                 <li>MathINGENIOUS</li>
                 <li>Futurália</li>
                 <li>EXPO FCT</li>
                 <li>Lycée Français Charles Lepierre</li>
-              </ul>
-            </section>
-            <section id="contact" class="bg-dark px-5">
-              <h1>Contact</h1>
-              <h3>
-                <span class="hl2">
-                  <b>hello(at)davidishere.today</b>
-                </span>
-                <img class="icon" src="images/email.svg">
-              </h3>
-              <h3>
-                <span class="hl2">
-                  <b>dc-almeida</b>
-                </span>
-                <img class="icon" src="images/github.svg">
-              </h3>
-              <h3>
-                <span class="hl2">
-                  <b>dc-almeida</b>
-                </span>
-                <img class="icon" src="images/linkedin.svg">
-              </h3>
-              <h3>
-                <span class="hl2">
-                  <b>dc-almeida.github.io</b>
-                </span>
-                <img class="icon" src="images/website.svg">
-              </h3>
-            </section>
-            <div class="back-up">
-              <a href="#">
-                <img class="icon" src="images/square-up.svg">
-              </a>
-              <!-- Next: Experience -->
-            </div>
-          </div>
+            </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacts" class="py-5">
+        <div class="container pt-5">
+            <h4 class="mb-4 border border-white rounded-pill d-inline-flex px-3 py-1">Contacts</h4>
+            <p><a href="mailto:dcalmeida@outlook.pt" style="text-decoration: none;">
+                    <img class="icon" src="img/email.svg">
+                </a> dcalmeida(@)outlook.pt</p>
+            <p><a href="https://www.github.com/dc-almeida/" style="text-decoration: none;">
+                    <img class="icon" src="img/github.svg">
+                </a> dc-almeida</p>
+            <p><a href="https://www.linkedin.com/in/dc-almeida/" style="text-decoration: none;">
+                    <img class="icon" src="img/linkedin.svg">
+                </a> dc-almeida</p>
+            <p><a href="https://www.instagram.com/almeida.d.c" style="text-decoration: none;">
+                    <img class="icon" src="img/instagram.svg">
+                </a> almeida.d.c</p>
         </div>
-      </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center border-top border-white py-3">
+        <div class="container">
+            <p class="mb-0"><small>&copy; 2025 David Almeida. All rights reserved.</small></p>
+        </div>
+    </footer>
+
+    <!-- Navigation -->
+    <nav class="bg-dark navbar navbar-dark py-3 d-lg-none sticky-bottom border-top border-white">
+        <button class="bg-dark" onclick="topFunction()" id="toTop" title="Go to top">↑</button>
+        <div class="container">
+            <ul class="navbar-nav mx-auto gap-2 d-flex flex-row flex-wrap justify-content-left">
+                <li class="nav-item d-inline-flex">
+                    <a class="nav-link text-white border border-white rounded-pill px-2 py-1" href="#about">About</a>
+                </li>
+                <li class="nav-item d-inline-flex">
+                    <a class="nav-link text-white border border-white rounded-pill px-2 py-1"
+                        href="#experience">Experience</a>
+                </li>
+                <li class="nav-item d-inline-flex">
+                    <a class="nav-link text-white border border-white rounded-pill px-2 py-1"
+                        href="#education">Education</a>
+                </li>
+                <li class="nav-item d-inline-flex">
+                    <a class="nav-link text-white border border-white rounded-pill px-2 py-1" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item d-inline-flex">
+                    <a class="nav-link text-white border border-white rounded-pill px-2 py-1"
+                        href="#activism">Activism</a>
+                </li>
+                <li class="nav-item d-inline-flex">
+                    <a class="nav-link text-white border border-white rounded-pill px-2 py-1"
+                        href="#outreach">Outreach</a>
+                </li>
+                <li class="nav-item d-inline-flex">
+                    <a class="nav-link text-white border border-white rounded-pill px-2 py-1"
+                        href="#contacts">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Get the button:
+        let mybutton = document.getElementById("toTop");
+
+        // Initially hide the button
+        mybutton.style.display = "none";
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+
 </html>

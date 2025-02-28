@@ -1,4 +1,3 @@
-# .github/workflows/preview.yml
 name: Deploy PR previews
 concurrency: preview-${{ github.ref }}
 on:
@@ -24,6 +23,17 @@ jobs:
           preview-branch: gh-pages
           umbrella-dir: pr-preview
           action: auto
+          
+      - name: Delete umbrella directory
+        if: github.event.action == 'closed'
+        run: |
+          git fetch origin gh-pages
+          git worktree add --track -b gh-pages origin/gh-pages
+          rm -rf pr-preview
+          git add .
+          git commit -m "Delete umbrella directory for PR #${{ github.event.pull_request.number }}"
+          git push origin gh-pages
+          git worktree remove gh-pages
 
 permissions:
   contents: write

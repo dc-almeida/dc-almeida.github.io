@@ -1,0 +1,11 @@
+{
+    "name": "dc-almeida.github.io",
+    "version": "1.0.0",
+    "description": "A static website deployed to GitHub Pages",
+    "devDependencies": {
+      "gh-pages": "^6.0.0" 
+    },
+    "homepage": "https://dc-almeida.github.io/", 
+    "author": "David Almeida",
+    "license": "MIT"
+  }

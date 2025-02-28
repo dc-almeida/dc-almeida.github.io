@@ -4,8 +4,6 @@
     "description": "A static website deployed to GitHub Pages",
     "scripts": {
       "build": "echo 'No build step required'",
-      "clean": "rm -rf dist",
-      "predeploy": "npm run build", 
       "deploy": "gh-pages -d dist"
     },
     "devDependencies": {

@@ -1,6 +1,11 @@
 /* Custom Styles */
-body {
+.quicksand {
     font-family: 'Quicksand', sans-serif;
+    color: #fff;
+  }
+
+.eb-garamond {
+    font-family: "EB Garamond", serif;
     color: #fff;
   }
 
@@ -9,13 +14,12 @@ body {
     transition: opacity .25s;
 }
 
-.nav-link {
+[class*="rounded-pill"] {
   background-color: teal;
 }
 
-
-h4[class*="rounded-pill"] {
-  background-color: teal;
+li [class*="pill-alt"] {
+  background-color: white;
 }
 
 .profile-pic {

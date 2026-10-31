@@ -96,7 +96,7 @@
                         set("up", "The server is online.", "You can enter now.");
                     } else {
                         set("down", "The server is asleep right now.",
-                            "If you see a Cloudflare 1033 or 502 error, the server is asleep. It is not always running, so come back later or ask me to start a session.");
+                            "It is not always running, so a 502 or 1033 error is expected when it is off. Come back later or ask me to start a session.");
                     }
                 };
                 const timer = setTimeout(() => finish(false), TIMEOUT_MS);

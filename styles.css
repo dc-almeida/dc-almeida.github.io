@@ -421,6 +421,63 @@ footer p {
   color: var(--muted);
 }
 
+.status-box {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 1.5rem 0 1rem;
+  padding: 0.9rem 1.1rem;
+  border: 3px solid var(--panel-border);
+  font-family: var(--pixel-font);
+  text-transform: uppercase;
+}
+
+.status-dot {
+  width: 14px;
+  height: 14px;
+  flex: none;
+  background: var(--muted);
+}
+
+.status-box[data-state="checking"] .status-dot {
+  animation: pixel-blink 700ms steps(2, end) infinite;
+}
+
+.status-box[data-state="up"] .status-dot {
+  background: #5dff8f;
+}
+
+.status-box[data-state="down"] .status-dot {
+  background: #ff7a7a;
+}
+
+@keyframes pixel-blink {
+  50% {
+    opacity: 0.2;
+  }
+}
+
+.pixel-button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 3rem;
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 0.55rem 1.1rem;
+  border: 0;
+  clip-path: var(--pixel-corners);
+  background: var(--panel-border);
+  color: #06160c;
+  font-family: var(--pixel-font);
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.pixel-button:hover {
+  background: var(--text);
+  color: #06160c;
+}
+
 @media (max-width: 767.98px) {
   html {
     scroll-padding-top: 10rem;

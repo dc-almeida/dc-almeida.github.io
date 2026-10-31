@@ -33,7 +33,7 @@
                     <li><a href="#outreach">Outreach</a></li>
                     <li><a href="#contacts">Contacts</a></li>
                     <li><a class="nav-gaming-link" href="https://gaming.davidalmeida.eu"
-                        title="Gaming subdomain placeholder">Gaming <svg class="gaming-icon" viewBox="0 0 14 8" aria-hidden="true" shape-rendering="crispEdges"><path fill="currentColor" d="M2 0h4v1h-4zM8 0h4v1h-4zM1 1h12v1h-12zM0 2h3v1h-3zM4 2h6v1h-6zM11 2h3v1h-3zM0 3h2v1h-2zM5 3h4v1h-4zM10 3h1v1h-1zM12 3h2v1h-2zM0 4h3v1h-3zM4 4h6v1h-6zM11 4h3v1h-3zM0 5h14v1h-14zM0 6h4v1h-4zM6 6h2v1h-2zM10 6h4v1h-4zM0 7h3v1h-3zM5 7h4v1h-4zM11 7h3v1h-3z"/></svg></a></li>
+                        title="Gaming subdomain placeholder">Gaming <svg class="gaming-icon" viewBox="0 0 17 8" aria-hidden="true" shape-rendering="crispEdges"><path fill="currentColor" d="M2 0h13v1h-13zM1 1h15v1h-15zM0 2h4v1h-4zM5 2h7v1h-7zM13 2h4v1h-4zM0 3h3v1h-3zM6 3h5v1h-5zM14 3h3v1h-3zM0 4h4v1h-4zM5 4h7v1h-7zM13 4h4v1h-4zM0 5h17v1h-17zM0 6h6v1h-6zM11 6h6v1h-6zM1 7h4v1h-4zM12 7h4v1h-4z"/></svg></a></li>
                 </ul>
             </nav>
         </div>
@@ -46,9 +46,9 @@
                 <div class="col-md-5 order-md-2 text-center">
                     <div class="profile-frame">
                         <img src="img/profile0.jpg" alt="Profile Picture" class="profile-pic is-visible">
-                        <img src="img/profile4.png" alt="" class="profile-pic" aria-hidden="true">
-                        <img src="img/profile8.png" alt="" class="profile-pic" aria-hidden="true">
-                        <img src="img/profile16.png" alt="" class="profile-pic" aria-hidden="true">
+                        <img src="img/profile4.jpg" alt="" class="profile-pic" aria-hidden="true">
+                        <img src="img/profile8.jpg" alt="" class="profile-pic" aria-hidden="true">
+                        <img src="img/profile16.jpg" alt="" class="profile-pic" aria-hidden="true">
                     </div>
                 </div>
                 <div class="col-md-7 order-md-1">
@@ -627,30 +627,61 @@
 
     <script>
         (() => {
-            const frames = document.querySelectorAll(".profile-frame .profile-pic");
-            if (frames.length < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-            const STEP_MS = 800;
+            const frame = document.querySelector(".profile-frame");
+            const imgs = [...frame.querySelectorAll(".profile-pic")];
+            if (imgs.length < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+            const SIZE = 600;
+            const BLOCKS = [1, 6, 12, 24, 40, 24, 12, 6, 1];
+            const STEP_MS = 90;
             const HOLD_FIRST_MS = 4000;
-            const HOLD_LAST_MS = 600;
+            const HOLD_LAST_MS = 800;
+            const canvas = document.createElement("canvas");
+            canvas.width = canvas.height = SIZE;
+            canvas.className = "profile-pic profile-canvas";
+            canvas.setAttribute("aria-hidden", "true");
+            const ctx = canvas.getContext("2d");
+            const small = document.createElement("canvas");
+            const sctx = small.getContext("2d");
             let index = 0;
             let direction = 1;
 
-            function show(next) {
-                frames[index].classList.remove("is-visible");
-                frames[next].classList.add("is-visible");
-                index = next;
+            function draw(img, block) {
+                const n = Math.ceil(SIZE / block);
+                small.width = small.height = n;
+                sctx.drawImage(img, 0, 0, n, n);
+                ctx.imageSmoothingEnabled = false;
+                ctx.drawImage(small, 0, 0, n, n, 0, 0, n * block, n * block);
+            }
+
+            function transition(from, to, done) {
+                let step = 0;
+                canvas.classList.add("is-visible");
+                const run = () => {
+                    const block = BLOCKS[step];
+                    draw(step < BLOCKS.length / 2 ? imgs[from] : imgs[to], block);
+                    if (++step < BLOCKS.length) return setTimeout(run, STEP_MS);
+                    imgs.forEach((img, i) => img.classList.toggle("is-visible", i === to));
+                    canvas.classList.remove("is-visible");
+                    done();
+                };
+                run();
             }
 
             function tick() {
                 const next = index + direction;
-                show(next);
-                let delay = STEP_MS;
-                if (next === frames.length - 1) { direction = -1; delay = STEP_MS + HOLD_LAST_MS; }
-                else if (next === 0) { direction = 1; delay = STEP_MS + HOLD_FIRST_MS; }
-                setTimeout(tick, delay);
+                transition(index, next, () => {
+                    index = next;
+                    let delay = HOLD_FIRST_MS;
+                    if (index === imgs.length - 1) { direction = -1; delay = HOLD_LAST_MS; }
+                    else if (index === 0) direction = 1;
+                    else delay = 0;
+                    setTimeout(tick, delay);
+                });
             }
 
-            setTimeout(tick, HOLD_FIRST_MS);
+            frame.appendChild(canvas);
+            Promise.all(imgs.map((img) => img.decode().catch(() => {}))).then(() => setTimeout(tick, HOLD_FIRST_MS));
         })();
     </script>
 </body>

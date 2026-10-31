@@ -31,7 +31,11 @@ html {
 }
 
 body {
+  display: flex;
   min-width: 320px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  flex-direction: column;
   margin: 0;
   color: var(--text);
   background-color: var(--page);
@@ -413,6 +417,7 @@ strong {
 }
 
 footer {
+  margin-top: auto;
   background: var(--page);
   border-color: var(--panel-border) !important;
 }

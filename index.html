@@ -10,71 +10,47 @@
     <!-- Custom CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Quicksand:wght@300..700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Jersey+15&family=Silkscreen:wght@400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="stylesheet" href="styles.css?v=2">
 </head>
 
-<body class="bg-dark quicksand">
+<body>
     <!-- Header -->
-    <header class="text-white text-center p-4">
+    <header class="site-header text-center">
         <div class="container">
-            <a href="index.html"><img src="img/david.png" height="100px"
-                    style="-webkit-filter: invert(1); filter: invert(1);"></a>
+            <div class="site-header-top">
+                <a class="site-title" href="index.html" aria-label="David Almeida home">David Almeida</a>
+            </div>
+            <nav class="site-nav" aria-label="Main navigation">
+                <ul class="site-nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#activism">Activism</a></li>
+                    <li><a href="#outreach">Outreach</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a class="nav-gaming-link" href="gaming.html">Gaming</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- Navigation -->
-    <nav class="bg-dark navbar navbar-expand-lg navbar-dark py-3 border-bottom border-white sticky-top d-none
-                d-lg-block">
-        <div class="container">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto gap-2 fs-5 d-flex flex-row flex-wrap justify-content-center">
-                    <li class="nav-item d-inline-flex">
-                        <a class="nav-link text-white border border-white rounded-pill px-3 py-1"
-                            href="#about">About</a>
-                    </li>
-                    <li class="nav-item d-inline-flex">
-                        <a class="nav-link text-white border border-white rounded-pill px-3 py-1"
-                            href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item d-inline-flex">
-                        <a class="nav-link text-white border border-white rounded-pill px-3 py-1"
-                            href="#education">Education</a>
-                    </li>
-                    <li class="nav-item d-inline-flex">
-                        <a class="nav-link text-white border border-white rounded-pill px-3 py-1"
-                            href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item d-inline-flex">
-                        <a class="nav-link text-white border border-white rounded-pill px-3 py-1"
-                            href="#activism">Activism</a>
-                    </li>
-                    <li class="nav-item d-inline-flex">
-                        <a class="nav-link text-white border border-white rounded-pill px-3 py-1"
-                            href="#outreach">Outreach</a>
-                    </li>
-                    <li class="nav-item d-inline-flex">
-                        <a class="nav-link text-white border border-white rounded-pill px-3 py-1"
-                            href="#contacts">Contacts</a>
-                    </li>
-                    <li class="nav-item d-inline-flex">
-                        <a class="nav-link text-black border border-black rounded-pill pill-alt px-3 py-1"
-                            href="umwelt"><img src="img/umwelt.png" height="15px"></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
     <section id="about" class="py-5">
         <div class="container pt-5">
-            <h4 class="mb-4 border border-white rounded-pill d-inline-flex px-3 py-1">About</h4>
+            <h4 class="section-title">About</h4>
             <div class="row align-items-center">
                 <div class="col-md-5 order-md-2 text-center">
-                    <img src="img/profile.jpg" alt="Profile Picture" class="profile-pic">
+                    <div class="profile-frame">
+                        <img src="img/profile0.jpg" alt="Profile Picture" class="profile-pic is-visible">
+                        <img src="img/profile4.jpg" alt="" class="profile-pic" aria-hidden="true">
+                        <img src="img/profile8.jpg" alt="" class="profile-pic" aria-hidden="true">
+                        <img src="img/profile16.jpg" alt="" class="profile-pic" aria-hidden="true">
+                    </div>
                 </div>
                 <div class="col-md-7 order-md-1">
                     <p class="lead">
@@ -103,12 +79,9 @@
 
     <section id="experience" class="py-5">
         <div class="container pt-5">
-            <h4 class="mb-4 border border-white rounded-pill d-inline-flex px-3 py-1">Experience</h4>
+            <h4 class="section-title">Experience</h4>
             <h4>
-                <a href="https://iiasa.ac.at/staff/david-campos-almeida" style="text-decoration: none;">
-                    <img class="icon" src="img/link.svg">
-                </a>
-                International Institute for Applied Systems Analysis (IIASA)
+                <a class="title-link" href="https://iiasa.ac.at/staff/david-campos-almeida">International Institute for Applied Systems Analysis (IIASA)</a>
             </h4>
             <h5>
                 <b>Research Software Programmer</b>
@@ -126,10 +99,7 @@
             </p>
             <br>
             <h4>
-                <a href="https://transparencia.pt/" style="text-decoration: none;">
-                    <img class="icon" src="img/link.svg">
-                </a>
-                Transparency International Portugal
+                <a class="title-link" href="https://transparencia.pt/">Transparency International Portugal</a>
             </h4>
             <h5>
 
@@ -164,10 +134,7 @@
             </p>
             <br>
             <h4>
-                <a href="https://www.mediaecosystems.org/" style="text-decoration: none;">
-                    <img class="icon" src="img/link.svg">
-                </a>
-                Media Ecosystems Analysis Group
+                <a class="title-link" href="https://www.mediaecosystems.org/">Media Ecosystems Analysis Group</a>
             </h4>
             <h5>
 
@@ -191,10 +158,7 @@
             </p>
             <br>
             <h4>
-                <a href="https://socialcomplexity.eu/" style="text-decoration: none;">
-                    <img class="icon" src="img/link.svg">
-                </a>
-                Social Physics and Complexity
+                <a class="title-link" href="https://socialcomplexity.eu/">Social Physics and Complexity</a>
             </h4>
             <h5>
 
@@ -238,10 +202,7 @@
             </p>
             <br>
             <h4>
-                <a href="https://fchampalimaud.org/research/groups/ribeiro" style="text-decoration: none;">
-                    <img class="icon" src="img/link.svg">
-                </a>
-                Behaviour and Metabolism Lab
+                <a class="title-link" href="https://fchampalimaud.org/research/groups/ribeiro">Behaviour and Metabolism Lab</a>
             </h4>
             <h5>
 
@@ -258,12 +219,9 @@
 
     <section id="education" class="py-5">
         <div class="container pt-5">
-            <h4 class="mb-4 border border-white rounded-pill d-inline-flex px-3 py-1">Education</h4>
+            <h4 class="section-title">Education</h4>
             <h4>
-                <a href="https://fenix.ciencias.ulisboa.pt/degrees/mcd" style="text-decoration: none;">
-                    <img class="icon" src="img/link.svg">
-                </a>
-                Master's in Data Science
+                <a class="title-link" href="https://fenix.ciencias.ulisboa.pt/degrees/mcd">Master's in Data Science</a>
             </h4>
             <h5>
 
@@ -282,11 +240,7 @@
             </p>
             <br>
             <h4>
-                <a href="https://www.fct.unl.pt/ensino/curso/licenciatura-em-biologia-celular-e-molecular"
-                    style="text-decoration: none;">
-                    <img class="icon" src="img/link.svg">
-                </a>
-                Bachelor's in Cell and Molecular Biology
+                <a class="title-link" href="https://www.fct.unl.pt/ensino/curso/licenciatura-em-biologia-celular-e-molecular">Bachelor's in Cell and Molecular Biology</a>
             </h4>
             <h5>
 
@@ -342,7 +296,7 @@
 
     <section id="skills" class="py-5">
         <div class="container pt-5">
-            <h4 class="mb-4 border border-white rounded-pill d-inline-flex px-3 py-1">Skills</h4>
+            <h4 class="section-title">Skills</h4>
             <h4>
                 Programming
             </h4>
@@ -410,12 +364,9 @@
 
     <section id="activism" class="py-5">
         <div class="container pt-5">
-            <h4 class="mb-4 border border-white rounded-pill d-inline-flex px-3 py-1">Activism</h4>
+            <h4 class="section-title">Activism</h4>
             <h4>
-                <a href="https://www.heforshelisboa.org/" style="text-decoration: none;">
-                    <img class="icon" src="img/link.svg">
-                </a>
-                HeForShe Lisboa
+                <a class="title-link" href="https://www.heforshelisboa.org/">HeForShe Lisboa</a>
             </h4>
             <h5>
                 <b>Alumni Board</b>
@@ -464,10 +415,7 @@
             </p>
             <br>
             <h4>
-                <a href="https://www.instagram.com/associacaoanemona" style="text-decoration: none;">
-                    <img class="icon" src="img/link.svg">
-                </a>
-                Associação Anémona
+                <a class="title-link" href="https://www.instagram.com/associacaoanemona">Associação Anémona</a>
             </h4>
             <h5>
                 <b>Secretariat</b>
@@ -483,10 +431,7 @@
             </p>
             <br>
             <h4>
-                <a href="https://www.instagram.com/anebio.pt" style="text-decoration: none;">
-                    <img class="icon" src="img/link.svg">
-                </a>
-                Associação Nacional de Estudantes de Biologia
+                <a class="title-link" href="https://www.instagram.com/anebio.pt">Associação Nacional de Estudantes de Biologia</a>
             </h4>
             <h5>
                 <b>President of the Board</b>
@@ -505,10 +450,7 @@
                 organising annual gatherings. </p>
             <br>
             <h4>
-                <a href="https://www.instagram.com/nucleobcm" style="text-decoration: none;">
-                    <img class="icon" src="img/link.svg">
-                </a>
-                Núcleo de Biologia Celular e Molecular
+                <a class="title-link" href="https://www.instagram.com/nucleobcm">Núcleo de Biologia Celular e Molecular</a>
             </h4>
             <h5>
                 <b>President of the Board</b>
@@ -526,10 +468,7 @@
                 workshops, job fairs. </p>
             <br>
             <h4>
-                <a href="https://www.fct.unl.pt/en" style="text-decoration: none;">
-                    <img class="icon" src="img/link.svg">
-                </a>
-                NOVA School of Science and Technology
+                <a class="title-link" href="https://www.fct.unl.pt/en">NOVA School of Science and Technology</a>
             </h4>
             <h5>
                 <b>Pedagogical Council</b>
@@ -546,7 +485,7 @@
 
     <section id="outreach" class="py-5">
         <div class="container pt-5">
-            <h4 class="mb-4 border border-white rounded-pill d-inline-flex px-3 py-1">Outreach</h4>
+            <h4 class="section-title">Outreach</h4>
             <h4>Interviewee
             </h4>
             <ul>
@@ -678,7 +617,7 @@
     <!-- Contact Section -->
     <section id="contacts" class="py-5">
         <div class="container pt-5">
-            <h4 class="mb-4 border border-white rounded-pill d-inline-flex px-3 py-1">Contacts</h4>
+            <h4 class="section-title">Contacts</h4>
             <p><a href="mailto:dcalmeida@outlook.pt" style="text-decoration: none;">
                     <img class="icon" src="img/email.svg">
                 </a> dcalmeida(@)outlook.pt</p>
@@ -695,76 +634,70 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-white text-center border-top border-white py-3">
+    <footer class="text-center border-top py-3">
         <div class="container">
-            <p class="mb-0"><small>&copy; 2025 David Almeida. All rights reserved.</small></p>
+            <p class="mb-0"><small>&copy; 2026 David Almeida. All rights reserved.</small></p>
         </div>
     </footer>
 
-    <!-- Navigation -->
-    <nav class="bg-dark navbar navbar-dark py-3 d-lg-none sticky-bottom border-top border-white">
-        <button class="bg-dark" onclick="topFunction()" id="toTop" title="Go to top">↑</button>
-        <div class="container">
-            <ul class="navbar-nav mx-auto gap-2 d-flex flex-row flex-wrap justify-content-left">
-                <li class="nav-item d-inline-flex">
-                    <a class="nav-link text-white border border-white rounded-pill px-2 py-1" href="#about">About</a>
-                </li>
-                <li class="nav-item d-inline-flex">
-                    <a class="nav-link text-white border border-white rounded-pill px-2 py-1"
-                        href="#experience">Experience</a>
-                </li>
-                <li class="nav-item d-inline-flex">
-                    <a class="nav-link text-white border border-white rounded-pill px-2 py-1"
-                        href="#education">Education</a>
-                </li>
-                <li class="nav-item d-inline-flex">
-                    <a class="nav-link text-white border border-white rounded-pill px-2 py-1" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item d-inline-flex">
-                    <a class="nav-link text-white border border-white rounded-pill px-2 py-1"
-                        href="#activism">Activism</a>
-                </li>
-                <li class="nav-item d-inline-flex">
-                    <a class="nav-link text-white border border-white rounded-pill px-2 py-1"
-                        href="#outreach">Outreach</a>
-                </li>
-                <li class="nav-item d-inline-flex">
-                    <a class="nav-link text-white border border-white rounded-pill px-2 py-1"
-                        href="#contacts">Contacts</a>
-                </li>
-                <li class="nav-item d-inline-flex">
-                    <a class="nav-link text-black border border-black rounded-pill pill-alt px-3 py-1"
-                        href="umwelt"><img src="img/umwelt.png" height="15px"></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Get the button:
-        let mybutton = document.getElementById("toTop");
+        (() => {
+            const frame = document.querySelector(".profile-frame");
+            const imgs = [...frame.querySelectorAll(".profile-pic")];
+            if (imgs.length < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-        // Initially hide the button
-        mybutton.style.display = "none";
+            const SIZE = 600;
+            const BLOCKS = [1, 6, 12, 24, 40, 24, 12, 6, 1];
+            const STEP_MS = 90;
+            const HOLD_FIRST_MS = 4000;
+            const HOLD_LAST_MS = 800;
+            const canvas = document.createElement("canvas");
+            canvas.width = canvas.height = SIZE;
+            canvas.className = "profile-pic profile-canvas";
+            canvas.setAttribute("aria-hidden", "true");
+            const ctx = canvas.getContext("2d");
+            const small = document.createElement("canvas");
+            const sctx = small.getContext("2d");
+            let index = 0;
+            let direction = 1;
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
+            function draw(img, block) {
+                const n = Math.ceil(SIZE / block);
+                small.width = small.height = n;
+                sctx.drawImage(img, 0, 0, n, n);
+                ctx.imageSmoothingEnabled = false;
+                ctx.drawImage(small, 0, 0, n, n, 0, 0, n * block, n * block);
             }
-        }
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
+            function transition(from, to, done) {
+                let step = 0;
+                canvas.classList.add("is-visible");
+                const run = () => {
+                    const block = BLOCKS[step];
+                    draw(step < BLOCKS.length / 2 ? imgs[from] : imgs[to], block);
+                    if (++step < BLOCKS.length) return setTimeout(run, STEP_MS);
+                    imgs.forEach((img, i) => img.classList.toggle("is-visible", i === to));
+                    canvas.classList.remove("is-visible");
+                    done();
+                };
+                run();
+            }
+
+            function tick() {
+                const next = index + direction;
+                transition(index, next, () => {
+                    index = next;
+                    let delay = HOLD_FIRST_MS;
+                    if (index === imgs.length - 1) { direction = -1; delay = HOLD_LAST_MS; }
+                    else if (index === 0) direction = 1;
+                    else delay = 0;
+                    setTimeout(tick, delay);
+                });
+            }
+
+            frame.appendChild(canvas);
+            Promise.all(imgs.map((img) => img.decode().catch(() => {}))).then(() => setTimeout(tick, HOLD_FIRST_MS));
+        })();
     </script>
 </body>
 
